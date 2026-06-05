@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Positive Moving — Déménagement international sans souci</title>
+<meta name="description" content="Positive Moving : un déménagement facile et sans souci partout dans le monde. Porte-à-porte, douanes, emballage & stockage sécurisés." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ SPRITE SVG (icônes & logos cohérents) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Interface -->
+    <symbol id="ic-spark" viewBox="0 0 24 24"><path d="M12 2.5l1.7 6.4a3 3 0 0 0 2.1 2.1l6.4 1.7-6.4 1.7a3 3 0 0 0-2.1 2.1L12 23l-1.7-6.5a3 3 0 0 0-2.1-2.1L1.7 12.7l6.5-1.7a3 3 0 0 0 2.1-2.1z" fill="currentColor"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-arrow-r" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+    <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-home" viewBox="0 0 24 24"><path d="M3 13.5 12 5l9 8.5M5.5 11.5V20h13v-8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- Services / features -->
+    <symbol id="ic-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.6 8.4 13.4 13.4 8.4 15.6 10.6 10.6z" fill="currentColor"/></symbol>
+    <symbol id="ic-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8m18 0-9 5M21 8v8l-9 5m0-8L3 8m9 5v8M3 8v8l9 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-clipboard" viewBox="0 0 24 24"><path d="M9 4h6v3H9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><rect x="5" y="5.5" width="14" height="15.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 11.5h7M8.5 15h4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="ic-delivery" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5M6 10v10h12V10m-8 10v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.7 2.4 4 5.6 4 9s-1.3 6.6-4 9c-2.7-2.4-4-5.6-4-9s1.3-6.6 4-9z" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <!-- Réseaux sociaux -->
+    <symbol id="ic-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="ic-linkedin" viewBox="0 0 24 24"><path d="M6.5 9.5V18M6.5 6.2v.02M11 18v-5a2.5 2.5 0 0 1 5 0v5M11 9.5V18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="ic-x" viewBox="0 0 24 24"><path d="M4 3h4.2l4 5.6L17.5 3H21l-6.4 7.6L21.4 21H17l-4.4-6.1L7 21H3.5l6.9-8.2z" fill="currentColor"/></symbol>
+    <symbol id="ic-facebook" viewBox="0 0 24 24"><path d="M14 7h2.2V4.1C15.8 4 14.8 4 13.7 4 11.4 4 10 5.4 10 7.9V10H7.5v3H10v8h3v-8h2.5l.4-3H13V8.2C13 7.4 13.3 7 14 7z" fill="currentColor"/></symbol>
+    <!-- Logos partenaires (marques monochromes) -->
+    <symbol id="lg-dropbox" viewBox="0 0 24 24"><path d="M7.5 3 3 6l4.5 3L12 6zM16.5 3 12 6l4.5 3L21 6zM3 12l4.5 3L12 12 7.5 9zM21 12l-4.5 3L12 12l4.5-3zM7.5 16.2 12 19.2l4.5-3-4.5-3z" fill="currentColor"/></symbol>
+    <symbol id="lg-hubspot" viewBox="0 0 24 24"><circle cx="10.5" cy="15" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14.8 11 17 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="18" cy="7" r="1.9" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="10.5" cy="15" r="1" fill="currentColor"/></symbol>
+    <symbol id="lg-square" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.9"/><rect x="9" y="9" width="6" height="6" rx="1.4" fill="currentColor"/></symbol>
+    <symbol id="lg-intercom" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 9v5m4-6v7m4-6v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="lg-grammarly" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 12h4a4 4 0 1 1-1.2-2.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="lg-notion" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 16V9l6 7V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="lg-stripe" viewBox="0 0 24 24"><path d="M10.6 9.4c0-.7.6-1 1.5-1 1.3 0 3 .4 4.3 1.1V6.1A11 11 0 0 0 12.1 5C9 5 7 6.6 7 9.3c0 4.2 5.8 3.5 5.8 5.3 0 .8-.7 1.1-1.7 1.1-1.4 0-3.3-.6-4.7-1.4v3.5c1.6.7 3.2 1 4.7 1 3.2 0 5.4-1.6 5.4-4.3 0-4.5-5.9-3.7-5.9-5.4z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<!-- Texture grain globale -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Barre de progression scroll -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#" class="logo" aria-label="Positive Moving — accueil">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 13.5 12 5l9 8.5M5.5 11.5V20h13v-8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo-text">P<span class="logo-o">O</span>SITIVE<br><b>MOVING</b></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#hero" class="nav-link active">Accueil</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#apropos" class="nav-link">À&nbsp;propos</a>
+      <a href="#avis" class="nav-link">Avis</a>
+      <a href="#conseils" class="nav-link">Conseils</a>
+      <a href="#protection" class="nav-link">Protection</a>
+      <a href="#blog" class="nav-link">Blog</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-pill magnetic">Obtenir un devis <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+
+    <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-grid">
+
+    <div class="hero-copy">
+      <h1 class="hero-title reveal">
+        Un déménagement<br>
+        facile et sans<br>
+        souci partout<br>
+        dans le <span class="highlight">monde</span>
+      </h1>
+
+      <p class="hero-q reveal" data-delay="1">Comment pouvons-nous vous aider aujourd'hui&nbsp;?</p>
+
+      <div class="hero-form reveal" data-delay="2">
+        <div class="select" id="needSelect" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
+          <span class="select-value" data-placeholder="J'ai besoin d'aide pour…">J'ai besoin d'aide pour…</span>
+          <span class="select-caret" aria-hidden="true">▾</span>
+          <ul class="select-options" role="listbox">
+            <li role="option" data-value="international">Un déménagement international</li>
+            <li role="option" data-value="local">Un déménagement local</li>
+            <li role="option" data-value="entreprise">Une relocalisation d'entreprise</li>
+            <li role="option" data-value="douanes">Les douanes & documents</li>
+            <li role="option" data-value="stockage">L'emballage & le stockage</li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-solid magnetic" id="contactBtn">Contactez-nous</button>
+      </div>
+
+      <ul class="hero-checks reveal" data-delay="3">
+        <li><span class="tick" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Déménagement porte-à-porte</li>
+        <li><span class="tick" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Assistance douanes &amp; documents</li>
+        <li><span class="tick" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Emballage &amp; stockage sécurisés</li>
+      </ul>
+    </div>
+
+    <div class="hero-media reveal" data-delay="2">
+      <div class="hero-photo tilt">
+        <img data-src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80" alt="Deux personnes se transmettant un carton de déménagement" />
+        <div class="hero-card float">
+          <strong>Rejoignez notre cercle</strong>
+          <span>Un pas de plus vers des jours meilleurs.</span>
+          <div class="avatars">
+            <img data-src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="" />
+            <img data-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="" />
+            <img data-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="" />
+            <span class="avatar-count">710+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PARTENAIRES (marquee) ============ -->
+<section class="partners">
+  <div class="container">
+    <p class="partners-title reveal">Plus de <b>100+</b> entreprises partenaires</p>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span class="brand"><svg class="brand-mark"><use href="#lg-hubspot"/></svg>HubSpot</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-dropbox"/></svg>Dropbox</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-square"/></svg>Square</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-intercom"/></svg>Intercom</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-grammarly"/></svg>Grammarly</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-notion"/></svg>Notion</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-stripe"/></svg>Stripe</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-hubspot"/></svg>HubSpot</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-dropbox"/></svg>Dropbox</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-square"/></svg>Square</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-intercom"/></svg>Intercom</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-grammarly"/></svg>Grammarly</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-notion"/></svg>Notion</span>
+      <span class="brand"><svg class="brand-mark"><use href="#lg-stripe"/></svg>Stripe</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section class="about" id="apropos">
+  <div class="container about-grid">
+
+    <div class="about-media reveal">
+      <div class="about-img about-img--lg tilt">
+        <img data-src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=800&q=80" alt="Déménageurs déchargeant un camion devant une maison" />
+      </div>
+      <div class="about-img about-img--sm tilt">
+        <img data-src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=500&q=80" alt="Camion de déménagement chargé de cartons" />
+      </div>
+      <div class="badge-60">
+        <svg viewBox="0 0 100 100" class="badge-ring" aria-hidden="true">
+          <defs><path id="circlePath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+          <text><textPath href="#circlePath">+ 60 ANS D'EXPÉRIENCE · DÉMÉNAGEMENT · MONDE · </textPath></text>
+        </svg>
+        <span class="badge-core">60<small>ANS</small></span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <span class="eyebrow reveal"><svg class="eb-ic" aria-hidden="true"><use href="#ic-spark"/></svg>À propos de l'entreprise</span>
+      <h2 class="section-title reveal" data-delay="1">Solutions de déménagement international</h2>
+      <p class="lead reveal" data-delay="2">Avec plus de 60 ans d'expérience, nous rendons les relocalisations mondiales simples et sans stress.</p>
+      <ul class="feature-list reveal" data-delay="3">
+        <li><span class="dot" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Déménagement porte-à-porte</li>
+        <li><span class="dot" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Assistance douanes &amp; documents</li>
+        <li><span class="dot" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Emballage &amp; stockage sécurisés</li>
+        <li><span class="dot" aria-hidden="true"><svg class="ic-mini" aria-hidden="true"><use href="#ic-check"/></svg></span> Réseau mondial &amp; suivi en temps réel</li>
+      </ul>
+      <div class="about-actions reveal" data-delay="4">
+        <a href="#services" class="btn btn-solid magnetic">En savoir plus <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-r"/></svg></a>
+        <button type="button" class="play-btn" aria-label="Lire la vidéo de présentation">
+          <span class="play-ring"></span><svg class="play-tri" aria-hidden="true"><use href="#ic-play"/></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><span class="stat-num" data-target="50" data-suffix="k+">0</span><span class="stat-label">Déménagements réussis</span></div>
+    <div class="stat"><span class="stat-num" data-target="250" data-suffix="+">0</span><span class="stat-label">Villes desservies</span></div>
+    <div class="stat"><span class="stat-num" data-target="25" data-suffix="+">0</span><span class="stat-label">Pays couverts</span></div>
+    <div class="stat"><span class="stat-num" data-target="100" data-suffix="+">0</span><span class="stat-label">Partenaires de confiance</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="eyebrow reveal"><svg class="eb-ic" aria-hidden="true"><use href="#ic-spark"/></svg>Ce que nous offrons</span>
+    <h2 class="section-title reveal" data-delay="1">Nous vous déménageons<br>partout dans le monde, sans stress</h2>
+
+    <div class="cards">
+      <article class="card reveal" data-delay="1">
+        <div class="card-img tilt"><img data-src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=600&q=80" alt="Déménagement international" /></div>
+        <h3>Déménagement international</h3>
+        <p>Nos spécialistes vous accompagnent à chaque étape — de la documentation requise jusqu'aux réglementations d'expédition.</p>
+        <a href="#contact" class="card-link">En savoir plus <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+      </article>
+
+      <article class="card card--feature reveal" data-delay="2">
+        <div class="card-img tilt"><img data-src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Dédouanement" /></div>
+        <h3>Dédouanement</h3>
+        <p>Nous gérons la complexité des douanes pour vous, en préparant chaque document et en garantissant la conformité.</p>
+        <a href="#contact" class="card-link">En savoir plus <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+      </article>
+
+      <article class="card reveal" data-delay="3">
+        <div class="card-img tilt"><img data-src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Emballage complet" /></div>
+        <h3>Emballage complet</h3>
+        <p>Notre équipe d'emballage professionnelle utilise des matériaux de qualité et des techniques éprouvées pour protéger vos biens.</p>
+        <a href="#contact" class="card-link">En savoir plus <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELOCALISATION ENTREPRISE ============ -->
+<section class="corporate" id="protection">
+  <div class="corporate-bg" aria-hidden="true"></div>
+  <div class="container corporate-grid">
+    <div class="corporate-copy">
+      <span class="eyebrow eyebrow--light reveal"><svg class="eb-ic" aria-hidden="true"><use href="#ic-spark"/></svg>Relocalisation d'entreprise internationale</span>
+      <h2 class="section-title section-title--light reveal" data-delay="1">La mobilité de vos<br>collaborateurs, partout<br>dans le monde</h2>
+      <p class="lead lead--light reveal" data-delay="2">Que vos employés déménagent pour le travail ou qu'un responsable mobilité orchestre les départs de toute une équipe, nous avons tout prévu pour vous.</p>
+      <a href="#contact" class="btn btn-solid magnetic reveal" data-delay="3">Nous contacter <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+    </div>
+    <div class="corporate-media reveal" data-delay="2">
+      <div class="corporate-img tilt"><img data-src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=700&q=80" alt="Collaborateurs préparant une relocalisation d'entreprise" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTENAIRE FIABLE ============ -->
+<section class="partner" id="conseils">
+  <div class="container">
+    <span class="eyebrow eyebrow--center reveal"><svg class="eb-ic" aria-hidden="true"><use href="#ic-spark"/></svg>Des relocalisations sans accroc, avec expertise</span>
+    <h2 class="section-title section-title--center reveal" data-delay="1">Votre partenaire de confiance pour</h2>
+
+    <div class="partner-layout">
+      <div class="partner-col">
+        <article class="pfeat reveal" data-delay="1">
+          <span class="pfeat-ic"><svg aria-hidden="true"><use href="#ic-compass"/></svg></span>
+          <div><h3>Planification du déménagement</h3><p>Des consultations détaillées pour cerner vos besoins, explorer les options et fournir un devis sur mesure.</p></div>
+        </article>
+        <article class="pfeat reveal" data-delay="2">
+          <span class="pfeat-ic"><svg aria-hidden="true"><use href="#ic-box"/></svg></span>
+          <div><h3>Emballage &amp; chargement</h3><p>Des déménageurs qualifiés emballent et chargent vos biens en toute sécurité, par voie terrestre, maritime ou aérienne.</p></div>
+        </article>
+      </div>
+
+      <div class="partner-center reveal" data-delay="2">
+        <div class="partner-img tilt"><img data-src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Camion de déménagement sur la route" /></div>
+      </div>
+
+      <div class="partner-col">
+        <article class="pfeat pfeat--right reveal" data-delay="1">
+          <span class="pfeat-ic"><svg aria-hidden="true"><use href="#ic-clipboard"/></svg></span>
+          <div><h3>Gestion du déménagement</h3><p>Un coordinateur dédié gère la logistique, les documents, le planning et le suivi de votre expédition.</p></div>
+        </article>
+        <article class="pfeat pfeat--right reveal" data-delay="2">
+          <span class="pfeat-ic"><svg aria-hidden="true"><use href="#ic-delivery"/></svg></span>
+          <div><h3>Livraison &amp; installation</h3><p>Une livraison ponctuelle, avec assistance, pour vous aider à vous installer confortablement dans votre nouveau foyer.</p></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="reviews" id="avis">
+  <div class="container">
+    <div class="reviews-head">
+      <h2 class="section-title reveal">Ce que disent nos clients</h2>
+      <div class="reviews-nav reveal" data-delay="1">
+        <button type="button" class="rev-btn" id="revPrev" aria-label="Avis précédent"><svg aria-hidden="true"><use href="#ic-arrow-r" transform="rotate(180 12 12)"/></svg></button>
+        <button type="button" class="rev-btn" id="revNext" aria-label="Avis suivant"><svg aria-hidden="true"><use href="#ic-arrow-r"/></svg></button>
+      </div>
+    </div>
+
+    <div class="reviews-viewport reveal" data-delay="1">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <article class="review">
+          <div class="review-photo tilt"><img data-src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Cliente satisfaite" /></div>
+          <div class="review-body">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>Service incroyable&nbsp;! Ils ont emballé, déménagé et déballé plus vite que prévu. Le site nous a donné toutes les infos en amont — aucune mauvaise surprise. Nous referons appel à eux, c'est certain&nbsp;!</p>
+            <div class="review-author">
+              <img data-src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=80&q=80" alt="" />
+              <div><strong>Mathilde Lanson</strong><span>Directrice & Fondatrice</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-photo tilt"><img data-src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Client satisfait" /></div>
+          <div class="review-body">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>Une équipe d'une grande douceur avec nos affaires fragiles. Le suivi en temps réel m'a énormément rassuré pendant tout le transport entre Paris et Montréal. Bravo&nbsp;!</p>
+            <div class="review-author">
+              <img data-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="" />
+              <div><strong>Julien Mercier</strong><span>Ingénieur expatrié</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review-photo tilt"><img data-src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Cliente satisfaite" /></div>
+          <div class="review-body">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <p>Nous avons relocalisé toute une équipe de 12 personnes à l'étranger. Coordination impeccable, zéro stress côté RH. Un vrai partenaire de confiance pour les entreprises.</p>
+            <div class="review-author">
+              <img data-src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80" alt="" />
+              <div><strong>Sophie Renaud</strong><span>Responsable Mobilité RH</span></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="blog">
+  <div class="container faq-inner">
+    <h2 class="section-title section-title--center reveal">Des questions&nbsp;?</h2>
+    <div class="accordion reveal" data-delay="1">
+      <div class="acc-item">
+        <button type="button" class="acc-head"><span>Que comprennent vos services de relocalisation&nbsp;?</span><span class="acc-ic" aria-hidden="true"><svg><use href="#ic-plus"/></svg></span></button>
+        <div class="acc-panel"><p>Nos services couvrent l'ensemble du parcours : planification, emballage, chargement, transport international, dédouanement, livraison et installation dans votre nouveau logement.</p></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-head"><span>Gérez-vous les déménagements individuels et d'équipe&nbsp;?</span><span class="acc-ic" aria-hidden="true"><svg><use href="#ic-plus"/></svg></span></button>
+        <div class="acc-panel"><p>Absolument. Que vous soyez un particulier ou une entreprise relocalisant plusieurs collaborateurs, nous adaptons notre accompagnement à votre situation.</p></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-head"><span>Comment garantissez-vous la sécurité des biens&nbsp;?</span><span class="acc-ic" aria-hidden="true"><svg><use href="#ic-plus"/></svg></span></button>
+        <div class="acc-panel"><p>Nous utilisons des matériaux d'emballage de qualité professionnelle, un suivi en temps réel et une assurance complète pour protéger vos biens du départ à l'arrivée.</p></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-head"><span>Pouvez-vous gérer les documents et les douanes&nbsp;?</span><span class="acc-ic" aria-hidden="true"><svg><use href="#ic-plus"/></svg></span></button>
+        <div class="acc-panel"><p>Oui. Notre équipe prépare et gère l'intégralité de la documentation douanière afin d'assurer une conformité totale et un passage sans accroc aux frontières.</p></div>
+      </div>
+      <div class="acc-item">
+        <button type="button" class="acc-head"><span>Combien de temps dure un déménagement international&nbsp;?</span><span class="acc-ic" aria-hidden="true"><svg><use href="#ic-plus"/></svg></span></button>
+        <div class="acc-panel"><p>Cela dépend de la destination et du mode de transport, mais nous vous fournissons un calendrier précis dès le devis, et le suivi vous tient informé à chaque étape.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="contact">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container cta-inner reveal">
+    <h2>Votre prochaine destination<br>n'est qu'à un <span class="highlight highlight--gold">clic</span></h2>
+    <a href="#hero" class="btn btn-solid btn-lg magnetic">Obtenir un devis gratuit <svg class="arrow" aria-hidden="true"><use href="#ic-arrow-ur"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo logo--light">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 13.5 12 5l9 8.5M5.5 11.5V20h13v-8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="logo-text">P<span class="logo-o">O</span>SITIVE<br><b>MOVING</b></span>
+      </a>
+      <p>Un déménagement facile et sans souci partout dans le monde, depuis plus de 60 ans.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg aria-hidden="true"><use href="#ic-instagram"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#ic-linkedin"/></svg></a>
+        <a href="#" aria-label="X"><svg aria-hidden="true"><use href="#ic-x"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg aria-hidden="true"><use href="#ic-facebook"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Déménagement international</a>
+      <a href="#services">Dédouanement</a>
+      <a href="#services">Emballage complet</a>
+      <a href="#services">Stockage sécurisé</a>
+    </div>
+    <div class="footer-col">
+      <h4>Entreprise</h4>
+      <a href="#apropos">À propos</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#conseils">Conseils déménagement</a>
+      <a href="#blog">Blog</a>
+    </div>
+    <div class="footer-col footer-news">
+      <h4>Newsletter</h4>
+      <p>Recevez nos meilleurs conseils de déménagement.</p>
+      <form class="news-form" id="newsForm">
+        <input type="email" placeholder="Votre e-mail" required aria-label="Votre e-mail" />
+        <button type="submit" aria-label="S'abonner"><svg aria-hidden="true"><use href="#ic-arrow-ur"/></svg></button>
+      </form>
+      <span class="news-msg" id="newsMsg"></span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Positive Moving. Tous droits réservés.</span>
+    <span>Conçu avec soin · Mentions légales · Confidentialité</span>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
